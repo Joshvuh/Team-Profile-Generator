@@ -14,6 +14,8 @@
   
   This application was built using Nodejs. Use it to generate an HTML page containing information about your Team.
   
+  A demonstraton on this application can be found here: https://youtu.be/MliNaAFtvEo
+  
   ## Installation
   
   Download the files from the repo, run npm i to load the dependencies, then run node index.js and answer the prompts.
