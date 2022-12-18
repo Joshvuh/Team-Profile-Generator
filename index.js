@@ -1,5 +1,6 @@
 const inquirer = require('inquirer');
-const fs = require('fs');
+const writeFile = require('./src/fs-template');
+const template = require('./src/html-template')
 
 const {Engineer, engineerPrompts} = require('./lib/Engineer');
 const {Intern, internPrompts} = require('./lib/Intern');
