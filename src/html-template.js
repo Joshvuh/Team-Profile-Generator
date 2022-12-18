@@ -1,3 +1,5 @@
+// Creating cards based on what role the new employee is
+
 const manager = managerData => {
     return `
     <div class='card' style='max-width: 300px; margin: 20px 0 20px 30px; background-color: rgb(200, 198, 167);'>
@@ -54,6 +56,7 @@ const intern = internData => {
     `
 }
 
+// Iterates through the array of employees, and creates cards for each of them until we have hit the end of the array.
 const employeesDiv = currentEmployees => {
 let employeeHtml = ''
 
@@ -96,4 +99,5 @@ const template = data => {
     `
 }
 
+// Exporting module to be used in index.js
 module.exports = template;

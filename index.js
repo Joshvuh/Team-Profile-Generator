@@ -8,6 +8,7 @@ const {Manager, managerPrompts} = require('./lib/Manager');
 
 const currentEmployees = [];
 
+// Creates a new employee under the Engineer role
 const newEngineer = () => {
     inquirer.prompt(engineerPrompts)
     .then((data) => {
@@ -17,6 +18,7 @@ const newEngineer = () => {
     })
 };
 
+// Creates a new employee under the Intern role
 const newIntern = () => {
     inquirer.prompt(internPrompts)
     .then((data) => {
@@ -26,6 +28,7 @@ const newIntern = () => {
     })
 };
 
+// Creates a new employee under the Manager role
 const newManager = () => {
     inquirer.prompt(managerPrompts)
     .then((data) => {
@@ -35,6 +38,7 @@ const newManager = () => {
     })
 };
 
+// Prompts to ask what role the new employee will be
 const newEmployee = () => {
     inquirer.prompt([{
             type: 'list',

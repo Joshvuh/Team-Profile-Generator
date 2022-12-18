@@ -1,5 +1,6 @@
 const fs = require('fs');
 
+// Used to create the index.html file
 const writeFile = fileData => {
     fs.writeFile('./dist/index.html', fileData, (err) => {
         if(err) {
